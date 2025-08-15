@@ -6,7 +6,7 @@ Project Overview
 This project analyzes the Indian Unicorn Startups dataset (2023) and demonstrates data exploration, visualization, and regression modeling using Random Forest. The goal is to predict a company’s valuation based on features such as sector, location, entry valuation, and year of entry.
 
 
-**Dataset**
+ # **Dataset**
 
 Source: **Indian Unicorn Startups dataset (June 2023, updated)**
 
@@ -26,7 +26,7 @@ Entry – Entry year information
 
 
 
-**Dataset preprocessing included:**
+ # **Dataset preprocessing included:**
 
 Removing spaces and standardizing capitalization for Location
 
@@ -34,7 +34,7 @@ Encoding categorical variables (Sector, Location, Company) into numeric features
 
 
 
-**Libraries Used**
+# **Libraries Used**
 
 Data Manipulation: pandas, numpy
 
@@ -52,7 +52,7 @@ Metrics: r2_score, mean_squared_error
 
 
 
-**Workflow***
+# **Workflow***
 1. **Data Preprocessing**
 
 Removed spaces and standardized text in Location column.
@@ -112,7 +112,7 @@ Cross-validation ensures the model generalizes well to unseen data.
 
 Visualizations help identify patterns such as sectors with higher valuations or trends over time.
 
-**References**
+# **References**
 
 **scikit-learn RandomForestRegressor**
 
