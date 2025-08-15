@@ -5,9 +5,10 @@ Project Overview
 
 This project analyzes the Indian Unicorn Startups dataset (2023) and demonstrates data exploration, visualization, and regression modeling using Random Forest. The goal is to predict a company’s valuation based on features such as sector, location, entry valuation, and year of entry.
 
-Dataset
 
-Source: Indian Unicorn Startups dataset (June 2023, updated)
+**Dataset**
+
+Source: **Indian Unicorn Startups dataset (June 2023, updated)**
 
 Key columns:
 
@@ -23,13 +24,17 @@ Valuation ($B) – Current valuation
 
 Entry – Entry year information
 
-Dataset preprocessing included:
+
+
+**Dataset preprocessing included:**
 
 Removing spaces and standardizing capitalization for Location
 
 Encoding categorical variables (Sector, Location, Company) into numeric features using one-hot encoding
 
-Libraries Used
+
+
+**Libraries Used**
 
 Data Manipulation: pandas, numpy
 
@@ -45,8 +50,10 @@ train_test_split – Split dataset into training and testing sets
 
 Metrics: r2_score, mean_squared_error
 
-Workflow
-1. Data Preprocessing
+
+
+**Workflow***
+1. **Data Preprocessing**
 
 Removed spaces and standardized text in Location column.
 
@@ -56,7 +63,7 @@ Converted categorical columns to numeric using one-hot encoding.
 
 Split data into features (X) and target (y).
 
-2. Exploratory Data Analysis (EDA)
+2. **Exploratory Data Analysis (EDA)**
 
 Bar plots: Companies per sector, average valuation by sector
 
@@ -65,7 +72,7 @@ Histograms: Companies entering over time
 Scatter plots: Current vs. entry valuation (with conditional labeling if valuation doubled or exceeded threshold)
 
 Correlation heatmap: Numerical features correlation.
-4. Model Building
+4. **Model Building**
 
 Random Forest Regressor was trained on the processed data.
 
@@ -78,7 +85,7 @@ min_samples_leaf (like R's min.node.size)
 Cross-validation (5-fold) was used to select the best hyperparameters.
 Best parameters were extracted from grid_search.best_params_.
 
-5. Model Evaluation
+5. **Model Evaluation**
 
 Predictions made on test data:
 
@@ -93,10 +100,11 @@ R² score
 
 Visualized Predicted vs Actual Valuation using scatter plot.
 
-6. Model Export
+6. **Model Export**
 
 Saved the trained Random Forest model for future use:
 Notes
+
 
 Preprocessing is crucial for Random Forest as categorical variables need numeric encoding.
 
@@ -104,11 +112,14 @@ Cross-validation ensures the model generalizes well to unseen data.
 
 Visualizations help identify patterns such as sectors with higher valuations or trends over time.
 
-References
+**References**
 
-scikit-learn RandomForestRegressor
+**scikit-learn RandomForestRegressor**
 
-GridSearchCV Documentation
+**GridSearchCV Documentation**
+
+
+
 +------------------------+
 |   Indian Unicorn Data  |
 +------------------------+
